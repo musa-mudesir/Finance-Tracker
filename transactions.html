@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transactions</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h2 class="Logo"><a href="index.html">Transactions</a></h2>
+      <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="transactions.html">Transactions</a>
+        <a href="budget.html">Savings Goals</a>
+        <button id="btnLogin" class="btnLogin" onclick="toggleLoginForm()">
+          Login
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="welcome-section" class="welcome-section">
+        <h2>
+          Track your transactions here
+        </h2>
+      </section>
+      <table id="transactionsTable">
+        <thead>`
+          <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Withdrawal</th>
+            <th>Deposit</th>
+            <th>Balance</th>
+          </tr>
+        </thead>
+        <tbody id="createdTable" class="createdTable">
+          <tr>
+            <td><input type="text" id="dateInput" /></td>
+            <td><input type="text" id="descriptionInput" /></td>
+            <td><input type="text" id="categoryInput" /></td>
+            <td><input type="text" id="withdrawalInput" /></td>
+            <td><input type="text" id="depositInput" /></td>
+            <div class="balanceInput">
+            <td><input type="text" id="balanceInput" /></td>
+            </div>
+          </tr>
+        </tbody>
+      </table>
+      <div id="totalBalanceDisplay"></div>
+      <button type="button" onclick="addTransaction(), updateTotalBalance()" >Add Transaction</button>
+      
+      <!-- <section>
+        <form id="LoginForm" class="LoginForm">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Login</button>
+        </form>
+      </section> -->
+      </form>
+    </main>
+
+    <aside>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="mailto:Musamudesir8@gmail.com">Contact</a></li>
+      </ul>
+    </aside>
+
+    <footer>
+      <p>© 2024 My Finance Tracker</p>
+    </footer>
+  </body>
+</html>

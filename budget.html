@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savings Goal</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h2 class="Logo"><a href="index.html">Savings goals</a></h2>
+      <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="transactions.html">Transactions</a>
+        <a href="budget.html">Savings Goals</a>
+        <button id="btnLogin" class="btnLogin" onclick="toggleLoginForm()">
+          Login
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="budget-input-section">
+        <h2>Savings Goal Calculator</h2>
+        <form id="budgetForm" class="budgetForm">
+          <label for="income">Income(Per month):</label>
+          <input type="text" id="income" name="income" required />
+
+          <label for="expenses">Expenses(Per Month):</label>
+          <input type="text" id="expenses" name="expenses" required />
+
+          <label for="savings">Savings Goals(In Account):</label>
+          <input type="text" id="savings" name="savings" required />
+
+          <label for="timeFrame">Time Frame to Reach your goal (Years)</label>
+          <input
+            type="number"
+            id="timeFrame"
+            name="timeFrame"
+            required
+            min="0"
+            max="10"
+          />
+
+          <button type="submit">Submit</button>
+
+          <section>
+            <p id="savingsPlanMessage"></p>
+          </section>
+        </form>
+      </section>
+    </main>
+
+    <aside>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="mailto:Musamudesir8@gmail.com">Contact</a></li>
+      </ul>
+    </aside>
+
+    <footer>
+      <p>© 2024 My Finance Tracker</p>
+    </footer>
+  </body>
+</html>

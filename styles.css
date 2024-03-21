@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    #34366f,
+    #494a85,
+    #5f5f9b,
+    #7575b2,
+    #8b8bc9,
+    #8c8dc8,
+    #8e8ec8,
+    #8f90c7,
+    #7c7dae,
+    #696a96,
+    #57587e,
+    #464667
+  );
+  background-size: 100vw 100vh;
+  background-position: center;
+}
+
+.Logo a {
+  font-family: monospace;
+  font-size: 2em;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 200;
+  margin-left: 20px;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.navigation a::after,
+.Logo a::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  background: #34366f;
+  height: 3px;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.navigation a:hover::after,
+.Logo a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.navigation .btnLogin {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 60px;
+  transition: 0.5s;
+}
+
+.navigation .btnLogin:hover {
+  background: #fff;
+  color: #34366f;
+}
+
+p {
+  position: absolute;
+  font-size: large;
+  top: 15%;
+  align-content: center;
+  color: white;
+}
+
+aside {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  color: white;
+}
+
+footer {
+  position: fixed;
+  top: 100%;
+  width: 100%;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.LoginForm {
+  background-color: #34366f;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  display: none;
+}
+
+.budgetForm {
+  background-color: #34366f;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  width: 210px;
+  height: 300px;
+}
+
+#savingsPlanMessage {
+  color: white;
+  background-color: #34366f;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+footer,
+aside {
+  text-shadow: none;
+}
+
+body.welcome-section {
+  margin-top: 10%;
+}
+
+.createdTable td {
+  color: black;
+  border-collapse: collapse;
+  border-color: #000000;
+  border: 2px solid black;
+}
